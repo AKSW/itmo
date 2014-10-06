@@ -1,0 +1,1 @@
+SELECT DISTINCT t.COUNTRY_ID,t.COUNTRY FROM sem_country_info t
