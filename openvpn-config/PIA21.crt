@@ -1,0 +1,71 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 27 (0x1b)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=RU, ST=NW, L=SPb, O=IFMO, OU=CIS, CN=parovoz/name=parovoz/emailAddress=root@localhost
+        Validity
+            Not Before: Dec 18 11:44:24 2012 GMT
+            Not After : Dec 16 11:44:24 2022 GMT
+        Subject: C=RU, ST=NW, L=SPb, O=IFMO, CN=PIA21/emailAddress=root@parovoz.ifmo.ru
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:be:c5:b1:ca:34:a4:7f:77:14:73:35:ad:5f:90:
+                    dc:0a:0e:08:09:a0:6d:8a:f3:eb:dd:9c:f1:61:3b:
+                    25:0d:c9:dd:d8:4c:a4:8a:78:48:5e:29:48:78:da:
+                    d3:20:42:65:73:27:ee:19:97:23:8a:a0:24:b5:b5:
+                    60:cd:07:48:68:ad:f6:d2:54:3b:6f:65:33:d1:e1:
+                    5b:0f:9e:3d:9c:62:32:12:15:ca:ce:e3:0a:f8:d7:
+                    db:f6:ce:89:dc:1e:c6:5b:7d:ca:e9:e1:80:5e:62:
+                    3e:04:07:9c:56:d8:b6:c4:a0:20:e7:f0:c0:56:f8:
+                    52:0b:5d:1c:6a:7f:a1:c3:f9
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                94:63:A5:AD:1E:7F:3A:25:50:BB:68:D2:C1:F2:F6:2D:2E:AA:9A:2B
+            X509v3 Authority Key Identifier: 
+                keyid:24:C2:C1:3C:51:3F:E1:5B:6A:D1:19:CA:D7:4C:DB:D8:D3:99:5B:95
+                DirName:/C=RU/ST=NW/L=SPb/O=IFMO/OU=CIS/CN=parovoz/name=parovoz/emailAddress=root@localhost
+                serial:A2:C2:9F:0A:0C:0D:ED:EB
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+        a9:6e:cc:74:b1:12:39:1d:22:d1:5a:70:b1:5f:78:b0:6a:7d:
+        93:e3:87:05:d2:c6:d2:d6:3c:75:97:d2:11:cb:95:b9:0a:1e:
+        1e:57:34:75:dc:4a:8a:a6:55:0c:a6:eb:55:6d:2d:60:8c:4c:
+        d5:40:ee:0b:78:fa:2e:d2:e9:1b:2e:8a:7b:1b:1d:a0:fb:25:
+        d5:7d:20:53:ad:b3:4a:fc:55:0a:3f:bb:5b:28:06:ae:17:15:
+        cc:13:35:0d:8b:7e:9d:20:44:ff:e5:56:8c:0b:67:9f:d5:75:
+        35:d3:15:ee:1e:56:bf:d1:d5:50:88:49:d3:97:f0:b3:da:de:
+        10:cb
+-----BEGIN CERTIFICATE-----
+MIIDrDCCAxWgAwIBAgIBGzANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMCUlUx
+CzAJBgNVBAgTAk5XMQwwCgYDVQQHEwNTUGIxDTALBgNVBAoTBElGTU8xDDAKBgNV
+BAsTA0NJUzEQMA4GA1UEAxMHcGFyb3ZvejEQMA4GA1UEKRMHcGFyb3ZvejEdMBsG
+CSqGSIb3DQEJARYOcm9vdEBsb2NhbGhvc3QwHhcNMTIxMjE4MTE0NDI0WhcNMjIx
+MjE2MTE0NDI0WjBsMQswCQYDVQQGEwJSVTELMAkGA1UECBMCTlcxDDAKBgNVBAcT
+A1NQYjENMAsGA1UEChMESUZNTzEOMAwGA1UEAxMFUElBMjExIzAhBgkqhkiG9w0B
+CQEWFHJvb3RAcGFyb3Zvei5pZm1vLnJ1MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCB
+iQKBgQC+xbHKNKR/dxRzNa1fkNwKDggJoG2K8+vdnPFhOyUNyd3YTKSKeEheKUh4
+2tMgQmVzJ+4ZlyOKoCS1tWDNB0horfbSVDtvZTPR4VsPnj2cYjISFcrO4wr419v2
+zoncHsZbfcrp4YBeYj4EB5xW2LbEoCDn8MBW+FILXRxqf6HD+QIDAQABo4IBPzCC
+ATswCQYDVR0TBAIwADAtBglghkgBhvhCAQ0EIBYeRWFzeS1SU0EgR2VuZXJhdGVk
+IENlcnRpZmljYXRlMB0GA1UdDgQWBBSUY6WtHn86JVC7aNLB8vYtLqqaKzCBvQYD
+VR0jBIG1MIGygBQkwsE8UT/hW2rRGcrXTNvY05lblaGBjqSBizCBiDELMAkGA1UE
+BhMCUlUxCzAJBgNVBAgTAk5XMQwwCgYDVQQHEwNTUGIxDTALBgNVBAoTBElGTU8x
+DDAKBgNVBAsTA0NJUzEQMA4GA1UEAxMHcGFyb3ZvejEQMA4GA1UEKRMHcGFyb3Zv
+ejEdMBsGCSqGSIb3DQEJARYOcm9vdEBsb2NhbGhvc3SCCQCiwp8KDA3t6zATBgNV
+HSUEDDAKBggrBgEFBQcDAjALBgNVHQ8EBAMCB4AwDQYJKoZIhvcNAQEFBQADgYEA
+qW7MdLESOR0i0VpwsV94sGp9k+OHBdLG0tY8dZfSEcuVuQoeHlc0ddxKiqZVDKbr
+VW0tYIxM1UDuC3j6LtLpGy6KexsdoPsl1X0gU62zSvxVCj+7WygGrhcVzBM1DYt+
+nSBE/+VWjAtnn9V1NdMV7h5Wv9HVUIhJ05fws9reEMs=
+-----END CERTIFICATE-----
