@@ -1,0 +1,23 @@
+To connect to Oracle DBMS of the ITMO university the following steps are required:
+1. Make an OpenVPN connection to the ITMO university subnetwork using script file from the bin/ folder 
+2. Run a Oracle SQLDeveloper [1] and use the following credentials to create a connection:
+login: ISU_SEMANTIC
+pass: fltu1632
+service name: oracis
+host: 192.168.1.2
+port: 1521 (Oracle DB default)
+
+As alternative it is possible to use the Oracle SQLPlus command line interface [2]:
+sqlplus64 ISU_SEMANTIC/fltu1632@192.168.1.2:1521/oracis
+
+For jdbc connectivity use oracle:thin client (ojdbc6.jar) [3]
+jdbc string is: "jdbc:oracle:thin:ISU_SEMANTIC/fltu1632@192.168.1.2:1521:oracis"
+
+In case of error messages like "Invalid date" during the queries, check the ENV variable to be set according to the locale used inside the Oracle RDBMS.
+export NLS_LANG=RUSSIAN_RUSSIA.CL8MSWIN1251
+Or set it inside the SQLDeveloper interface in the preferences section.
+
+References:
+[1] SQLDeveloper download: http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html
+[2] SQLPlus download: http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
+[3] OJDBC6 driver download: http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html

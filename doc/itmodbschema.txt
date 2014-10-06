@@ -1,0 +1,5 @@
+#Laboratories
+SELECT * FROM sem_list_info
+
+#Persons
+SELECT * FROM sem_person_info

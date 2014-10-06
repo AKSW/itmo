@@ -1,0 +1,10 @@
+To work with Oracle DBMS Sparqlify implemented a new adapter due to proprietary extensions of the SQL language (i.e. ROWNUM).
+
+To get Sparqlify working with the Oracle DBMS the running command should be changed from:
+#java -cp "/usr/share/lib/sparqlify-cli/sparqlify-cli.jar" org.aksw.sparqlify.web.Main "$@"
+To
+java -cp "$PATHTOOJDBC/ojdbc6.jar:/usr/share/lib/sparqlify-cli/sparqlify-cli.jar" org.aksw.sparqlify.web.Main "$@"
+
+To process the mapping run the script from the bin/ folder
+Or use one-liner:
+sparqlify -D -U ISU_SEMANTIC -W fltu1632 -j jdbc:oracle:thin:ISU_SEMANTIC/fltu1632@192.168.1.2:1521/oracis -m mapping.sml
