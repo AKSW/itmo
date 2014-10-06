@@ -1,0 +1,1 @@
+select * from sem_list_info;
