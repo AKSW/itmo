@@ -11,7 +11,7 @@ select * from sem_list_info;
 select NET_DEP_ID,trim(regexp_substr (COUNTRY, '[^|]+', 1, level)) COUNTRY
 from SEM_LIST_INFO 
 connect by level <= length (regexp_replace (COUNTRY, '[^|]+'))  + 1
-# distinct list of all countries
+# distinct list of all countries (takes ages though)
 select distinct trim(regexp_substr (COUNTRY, '[^|]+', 1, level)) COUNTRY
 from SEM_LIST_INFO 
 connect by level <= length (regexp_replace (COUNTRY, '[^|]+'))  + 1
