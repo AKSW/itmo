@@ -16,11 +16,11 @@
 :sistiId a rdf:Property , owl:FunctionalProperty;
  rdfs:domain :SISTI;
  rdfs:range xsd:String;
- rdfs:label "SISTI ID"@;
- rdfs:comment "SISTI identifier (nn.nn.nn)"@.
+ rdfs:label "SISTI ID"@en;
+ rdfs:comment "SISTI identifier (nn.nn.nn)"@en.
 
 :sisti a rdf:Property;
- rdfs:label ""@en;
- rdfs:comment ""@en;
+ rdfs:label "SISTI"@en;
+ rdfs:comment "SISTI category"@en;
  rdfs:domain vivo:Laboratory;
  rdfs:range :SISTI.
