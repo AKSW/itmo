@@ -4,8 +4,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix vivo: <http://vivoweb.org/ontology/core#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
 
 :SISTI a owl:Class;
+ dc:source "http://grnti.ru";
  rdfs:label "SISTI"@en;
  rdfs:label "ГРНТИ"@ru;
  rdfs:comment "State Index of Scientific and Technical Information"@en;
@@ -14,7 +16,8 @@
 :sistiId a rdf:Property , owl:FunctionalProperty;
  rdfs:domain :SISTI;
  rdfs:range xsd:String;
- rdfs:label "SISTI ID"@.
+ rdfs:label "SISTI ID"@;
+ rdfs:comment "SISTI identifier (nn.nn.nn)"@.
 
 :sisti a rdf:Property;
  rdfs:label ""@en;
