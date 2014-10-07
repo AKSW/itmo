@@ -6,6 +6,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix lgdo: <http://linkedgeodata.org/ontology/>.
+@prefix gn: <http://www.geonames.org/ontology#>.
 
 :SISTI a owl:Class;
  dc:source "http://grnti.ru";
@@ -31,7 +32,7 @@
  rdfs:comment "".
 
 :RealLaboratory a owl:Class;
- rdfs:subClassOf :Laboratory
+ rdfs:subClassOf :Laboratory;
  rdfs:subClassOf
  [
   a owl:Restriction;
@@ -40,16 +41,22 @@
  ];
  rdfs:comment "As virtual laboratories without definite representative office(-s) can exist, we define a class for real laboratories with a restriction, that it has representative office in at least one country".
 
+:hasResearchArea a rdf:Property;
+ rdfs:subPropertyOf vivo:hasResearchArea;
+ rdfs:domain :Laboratory;
+ rdfs:range xsd:String;
+
 :ResearchArea a owl:Class;
  rdfs:subClassOf
  [
   a owl:Restriction;
   owl:onProperty :hasResearchArea.
   owl:minCardinality 1.
- ].
+ .].
  
-:hasResearchArea a rdf:Property;
- rdfs:subClassOf vivo:hasResearchArea;
- rdfs:domain :Laboratory;
- rdfs:range xsd:String;
- 
+ :locatedIn a rdf:Property;
+  rdfs:subPropertyOf gn:locatedIn;
+  rdfs:label "located in"@en;
+  rdfs:domain :Laboratory;
+  rdfs:range lgdo:Country.
+  
