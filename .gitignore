@@ -1,3 +1,5 @@
 itmojava/bin
 itmojava/.*
 *.swp
+data/
+mappings/all.sml
