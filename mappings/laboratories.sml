@@ -11,6 +11,6 @@ CREATE VIEW Laboratories AS CONSTRUCT {
 }
 WITH
   ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory/", ?NET_DEP_ID))
-  ?name = typedLiteral(?NAME, xsd:string)
+  ?name = plainLiteral(?NAME, 'ru')
 FROM
   [[SELECT NET_DEP_ID, NAME FROM sem_list_info]]
