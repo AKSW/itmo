@@ -8,7 +8,7 @@ CREATE VIEW Laboratories AS CONSTRUCT {
                rdfs:label ?name.
 }
 WITH
-  ?laboratory = uri(concat("http://lod.ifmo.ru/", ?NET_DEP_ID))
-  ?name = plainLiteral(?NAME)
+  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory/", ?NET_DEP_ID))
+  ?name = typedLiteral(?NAME, xsd:String)
 FROM
   [[SELECT NET_DEP_ID, NAME FROM sem_list_info]]

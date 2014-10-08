@@ -1,1 +1,1 @@
-select * from sem_person_info;
+select * from sem_person_info where rownum < 10;
