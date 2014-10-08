@@ -10,7 +10,7 @@ CREATE VIEW LaboratoryResearchFields AS CONSTRUCT {
 }
 WITH
   ?researchArea = uri(concat("http://lod.ifmo.ru/ResearchArea/", ?RES_DIR_ID))
-  ?label = typedLiteral(?RES_DIR, xsd:string)
+  ?label = plainLiteral(?RES_DIR, 'ru')
 FROM
   [[ SELECT
      sm.atrb_id AS "RES_DIR_ID", 
