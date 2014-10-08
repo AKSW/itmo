@@ -4,13 +4,16 @@ PREFIX vivo:<http://vivoweb.org/ontology/core#>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 
 CREATE VIEW LaboratoryResearchFields AS CONSTRUCT {
-  ?laboratory vivoplus:hasResearchArea ?researchArea .
+  ?laboratory vivoplus:locatedIn ?country .
 }
 WITH
-  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory/", ?NET_DEP_ID))
-  ?country = uri(concat("http://lod.ifmo.ru/ResearchArea/", ?RES_DIR_ID))
+  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory", ?NET_DEP_ID))
+  ?country = uri(?URI)
 FROM
-  [[ SELECT
-     sm.atrb_id AS "RES_DIR_ID", 
-     sm.net_dep_id AS "NET_DEP_ID" 
-     FROM isu_spm.sem_res_dir_info sm]]
+  [[ SELECT 
+       NET_DEP_ID,
+       URI 
+     FROM sem_country_info, sem_country_lgd
+     WHERE 
+       country_id=id
+  ]]
