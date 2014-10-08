@@ -8,8 +8,8 @@ CREATE VIEW LaboratoryResearchFields AS CONSTRUCT {
   ?laboratory vivoplus:hasResearchArea ?researchArea .
 }
 WITH
-  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory/", ?NET_DEP_ID))
-  ?researchArea = uri(concat("http://lod.ifmo.ru/ResearchArea/", ?RES_DIR_ID))
+  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory", ?NET_DEP_ID))
+  ?researchArea = uri(concat("http://lod.ifmo.ru/ResearchArea", ?RES_DIR_ID))
 FROM
   [[ SELECT
      sm.atrb_id AS "RES_DIR_ID", 
