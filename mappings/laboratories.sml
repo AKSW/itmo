@@ -2,6 +2,7 @@ PREFIX lod-ifmo:<http://lod.ifmo.ru>
 PREFIX vivoplus:<http://vivoplus.aksw.org/ontology#>
 PREFIX vivo:<http://vivoweb.org/ontology/core#>
 PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
 
 CREATE VIEW Laboratories AS CONSTRUCT {
    ?laboratory a vivoplus:Laboratory ;
@@ -10,6 +11,6 @@ CREATE VIEW Laboratories AS CONSTRUCT {
 }
 WITH
   ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory/", ?NET_DEP_ID))
-  ?name = typedLiteral(?NAME, xsd:String)
+  ?name = typedLiteral(?NAME, xsd:string)
 FROM
   [[SELECT NET_DEP_ID, NAME FROM sem_list_info]]
