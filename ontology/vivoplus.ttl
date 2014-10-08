@@ -9,7 +9,7 @@
 @prefix gn: <http://www.geonames.org/ontology#>.
 
 :SISTI a owl:Class;
- dc:source "http://grnti.ru";
+ rdfs:seeAlso "http://grnti.ru";
  rdfs:label "SISTI"@en;
  rdfs:label "ГРНТИ"@ru;
  rdfs:comment "State Index of Scientific and Technical Information"@en;
