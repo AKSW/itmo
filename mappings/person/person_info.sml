@@ -7,14 +7,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CREATE VIEW Staff AS CONSTRUCT {
    ?person a foaf:Person ;
-               a vivo:Laboratory;
-               foaf:firstName ?firstName;
-               foaf:lastName ?lastName;
-               vivo:middleName ?middleName;
-               vivoplus:isBoss ?isBoss;
                vivoplus:pcardId ?pcardId;
+               foaf:firstName ?firstName;
+               vivo:middleName ?middleName;
+               foaf:lastName ?lastName;
+               rdfs:label ?label;
                vivo:affiliatedOrganization ?laboratory;
-               rdfs:label ?label.
+               vivo:affiliatedOrganization ?subDepartment;
+               vivoplus:jobType ?jobType;
+               vivoplus:academicStatus ?academicStatus;
+               rdfs:comment ?postFormat.
 
 }
 WITH
@@ -23,10 +25,12 @@ WITH
   ?firstName = plainLiteral(?FIRST_NAME, 'ru')
   ?middleName = plainLiteral(?PATRONYMIC, 'ru')
   ?lastName = plainLiteral(?LAST_NAME, 'ru')
-  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory",?NET_DEP_ID))
   ?label = plainLiteral(concat(concat(?FIRST_NAME," "),?LAST_NAME))
-  ?isBoss = typedLiteral(?IS_BOSS,xsd:boolean)
+  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory",?NET_DEP_ID))
+  ?subDepartment = uri(concat("http://lod.ifmo.ru/Subdepartment",?SUB_DEPARTMENT) # TODO transliterate, remove spaces
+  ?jobType = uri(concat("http://vivoplus.aksw.org/ontology#",?JOB_TYPE) # TODO transliterate, remove spaces
+ ?postFormat = plainLiteral(?POST_FORMAT,'ru')
 FROM
-  [[SELECT NET_DEP_ID, PCARD_ID,FIRST_NAME, PATRONYMIC, LAST_NAME, USRS_STATUS,
-  replace(replace(USRS_STATUS,'BOSS','true'),'USER','false') IS_BOSS FROM
-  sem_person_info]]
+  [[SELECT NET_DEP_ID, PCARD_ID,FIRST_NAME, PATRONYMIC, LAST_NAME, 
+   SUB_DEPARTMENT, JOB_TYPE, POST_FORMAT
+  FROM sem_person_info]]
