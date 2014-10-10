@@ -1,0 +1,1 @@
+SELECT trans_eng(StrForTranslate => 'междунарнодная лаборатория') FROM dual
