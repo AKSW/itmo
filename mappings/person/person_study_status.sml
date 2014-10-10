@@ -12,6 +12,6 @@ CREATE VIEW Staff AS CONSTRUCT {
 }
 WITH
   ?person = uri(concat("http://lod.ifmo.ru/Person", ?PCARD_ID))
-  ?studyStatus= uri(concat("http://vivoplus.aksw.org/ontology#",?STUDY_STATUS)) /// TODO transliterate 
+  ?studyStatus= uri(concat("http://vivoweb.org/ontology/core#",?STUDY_STATUS)) /// TODO transliterate 
 FROM
   [[SELECT PCARD_ID, STUDY_STATUS sem_person_study_status]]

@@ -26,11 +26,12 @@ WITH
   ?middleName = plainLiteral(?PATRONYMIC, 'ru')
   ?lastName = plainLiteral(?LAST_NAME, 'ru')
   ?label = plainLiteral(concat(concat(?FIRST_NAME," "),?LAST_NAME))
-  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory",?NET_DEP_ID))
-  ?subDepartment = uri(concat("http://lod.ifmo.ru/Subdepartment",?SUB_DEPARTMENT) # TODO transliterate, remove spaces
-  ?jobType = uri(concat("http://vivoplus.aksw.org/ontology#",?JOB_TYPE) # TODO transliterate, remove spaces
+  ?laboratory = uri(vivoplus:,"Laboratory",?NET_DEP_ID)
+  ?subDepartment = uri(vivoplus:,"/Subdepartment",?SUB_DEPARTMENT)
+  ?jobType = uri(vivoplus:,?JOB_TYPE) # TODO transliterate, remove spaces
  ?postFormat = plainLiteral(?POST_FORMAT,'ru')
 FROM
   [[SELECT NET_DEP_ID, PCARD_ID,FIRST_NAME, PATRONYMIC, LAST_NAME, 
-   SUB_DEPARTMENT, JOB_TYPE, POST_FORMAT
-  FROM sem_person_info]]
+   regexp_replace(initcap(regexp_replace(SUB_DEPARTMENT, '[[:digit:]]', ' ')),
+   '([[:punct:] | [:blank:]])', ''), JOB_TYPE, POST_FORMAT
+  FROM sem_person_fio]]
