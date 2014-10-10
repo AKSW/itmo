@@ -1,4 +1,4 @@
-# Extension of VIVO
+# Extension of VIVO, mainly because of Russian particularities
 @prefix : <http://aksw.org/vivoplus>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
@@ -60,3 +60,20 @@
  rdfs:domain :Laboratory;
  rdfs:range lgdo:Country.
   
+:CandidateOfSciencesStudent rdfs:subClassOf vivo:Student, vivo:GraduateStudent;
+ rdfs:label "Candidate of Science student"@en;
+ rdfs:seeAlso :CandidateOfSciencesDegree.
+ 
+:DoctorOfSciencesStudent rdfs:subClassOf vivo:Student, vivo:GraduateStudent;
+ rdfs:label "Doctor of Science student"@en;
+ rdfs:seeAlso :DoctorOfSciencesDegree.
+ 
+:CandidateOfSciences a vivo:AcademicDegree;
+ rdfs:comment "The Candidate of Sciences (Kandidat Nauk) is the lower of Russias' two doctoral degrees. It normally requires at least three years of study beyond graduation from a university level higher education institution and the award of the Specialist or the Magistr diploma."@en;
+ rdfs:label "Candidate of Sciences"@en;
+ rdfs:label "кандидат наук"@ru.
+
+:DoctorOfSciences a vivo:AcademicDegree;
+ rdfs:comment "The Doctor of Sciences (Doktor Nauk) is the higher of Russias' two doctoral degrees. It can be earned after a period of further study following the award of the Candidate of Sciences degree and requires five to fifteen years beyond the award of the Candidate of Sciences degree."@en;
+ rdfs:label "Doctor of Sciences"@en;
+ rdfs:label "доктор наук"@ru.
