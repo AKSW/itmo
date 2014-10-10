@@ -68,12 +68,12 @@
  rdfs:label "Doctor of Science student"@en;
  rdfs:seeAlso :DoctorOfSciencesDegree.
  
-:CandidateOfSciences a vivo:AcademicDegree;
+:CandidateOfSciences a vivo:AcademicDegree, vivo:ThesisDegree;
  rdfs:comment "The Candidate of Sciences (Kandidat Nauk) is the lower of Russias' two doctoral degrees. It normally requires at least three years of study beyond graduation from a university level higher education institution and the award of the Specialist or the Magistr diploma."@en;
  rdfs:label "Candidate of Sciences"@en;
  rdfs:label "кандидат наук"@ru.
 
-:DoctorOfSciences a vivo:AcademicDegree;
+:DoctorOfSciences a vivo:AcademicDegree, vivo:ThesisDegree;
  rdfs:comment "The Doctor of Sciences (Doktor Nauk) is the higher of Russias' two doctoral degrees. It can be earned after a period of further study following the award of the Candidate of Sciences degree and requires five to fifteen years beyond the award of the Candidate of Sciences degree."@en;
  rdfs:label "Doctor of Sciences"@en;
  rdfs:label "доктор наук"@ru.
