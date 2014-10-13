@@ -4,3 +4,5 @@ itmojava/.*
 data/
 *~
 mappings/all.sml
+openvpn-config/conf_PIA21.ovpn
+openvpn-config/log
