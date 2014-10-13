@@ -77,3 +77,8 @@
  rdfs:comment "The Doctor of Sciences (Doktor Nauk) is the higher of Russias' two doctoral degrees. It can be earned after a period of further study following the award of the Candidate of Sciences degree and requires five to fifteen years beyond the award of the Candidate of Sciences degree."@en;
  rdfs:label "Doctor of Sciences"@en;
  rdfs:label "доктор наук"@ru.
+
+:aspiresDegree a rdf:Property;
+ rdfs:label "aspires degree"@en;
+ rdfs:domain foaf:Person;
+ rdfs:range foaf:AcademicDegree.
