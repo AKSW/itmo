@@ -1,0 +1,19 @@
+[program:oracis-vpn]
+command=sudo openvpn OPENVPN_DIR/conf_PIA21.ovpn
+autostart=true
+autorestart=true
+startsecs=10
+startretries=3
+exitcodes=0,2
+stopsignal=TERM
+stopwaitsecs=10
+user=root
+redirect_stderr=false
+stdout_logfile=OPENVPN_DIR/log/stdout.log
+stdout_logfile_maxbytes=1MB
+stdout_logfile_backups=10
+stdout_capture_maxbytes=1MB
+stderr_logfile=OPENVPN_DIR/log/stderr.log
+stderr_logfile_maxbytes=1MB
+stderr_logfile_backups=10
+stderr_capture_maxbytes=1MB
