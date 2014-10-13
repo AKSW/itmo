@@ -91,4 +91,4 @@
 # todo: clarify what that means exactly 
 :ScientificSupervisor a owl:Class;
  rdfs:subClassOf foaf:Person;
- rdfsl:abel "Научныйруководитель"@ru.
+ rdfsl:abel "Научный руководитель"@ru.
