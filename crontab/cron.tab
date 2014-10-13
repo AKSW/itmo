@@ -1,0 +1,2 @@
+#run every 6 hours
+0 */6 * * * /home/user/itmo/bin/load-all.sh >> /home/user/itmo/crontab/log/log.out
