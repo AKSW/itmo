@@ -13,7 +13,7 @@ do
     echo $FILESIZE
     if [ $FILESIZE -eq 0 ]; 
     then
-      echo "$file got errors"
+      echo "$file got errors" | tee -a errors.txt
     else
       echo "$file is okay"
     fi;
