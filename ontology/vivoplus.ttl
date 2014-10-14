@@ -22,22 +22,22 @@
  rdfs:domain :SISTI;
  rdfs:range xsd:String;
  rdfs:label "SISTI ID"@en;
- rdfs:label "todo translate"@ru;
- rdfs:comment "todo translate"@ru;
+ rdfs:label "Идентификатор ГРНТИ"@ru;
+ rdfs:comment "Идентификатор ГРНТИ состоит из трех групп чисел по две цифре (нн.нн.нн)"@ru;
  rdfs:comment "SISTI identifier (nn.nn.nn)"@en.
 
 :sisti a rdf:Property;
  rdfs:label "SISTI"@en;
  rdfs:comment "SISTI category"@en;
- rdfs:label "todo translate"@ru;
- rdfs:comment "todo translate"@ru;
+ rdfs:label "ГРНТИ"@ru;
+ rdfs:comment "Категория ГРНТИ"@ru;
  rdfs:domain :Laboratory;
  rdfs:range :SISTI.
 
 :Laboratory a owl:Class;
  rdfs:subClassOf vivo:Laboratory;
- rdfs:label "todo translate"@ru;
- rdfs:comment "todo translate"@ru;
+ rdfs:label "лаборатория"@ru;
+ rdfs:comment ""@ru;
  rdfs:label "laboratory"@en;
  rdfs:comment ""@en.
 
@@ -49,8 +49,8 @@
   owl:onProperty lgd:country;
   owl:cardinality 0
  ];
- rdfs:label "todo translate"@ru;
- rdfs:comment "todo translate"@ru;
+ rdfs:label "виртуальная лаборатория"@ru;
+ rdfs:comment "виртуальная лаборатория без определенного представительского офиса"@ru;
  rdfs:label "virtual laboratory";
  rdfs:comment "A virtual laboratory without definite representative office".
 
@@ -62,17 +62,17 @@
   owl:onProperty lgd:country;
   owl:minCardinality 1
  ];
- rdfs:label "todo translate"@ru;
- rdfs:comment "todo translate"@ru;
- rdfs:label "real laboratory";
+ rdfs:label "реальная лаборатория"@ru;
+ rdfs:comment "реальная лаборатория с представительским офисом хотя бы в одной стране"@ru;
+ rdfs:label "Real laboratory";
  rdfs:comment "A real laboratories with an representative office in at least one country".
 
 :researchArea a rdf:Property;
  rdfs:subPropertyOf vivo:hasResearchArea;
  rdfs:domain :Laboratory;
  rdfs:range xsd:String;
- rdfs:label "todo translate"@ru;
- rdfs:label "research area"@en.
+ rdfs:label "область исследований"@ru;
+ rdfs:label "Research area"@en.
 
 :ResearchArea a owl:Class;
  rdfs:subClassOf
@@ -81,7 +81,7 @@
   owl:onProperty :hasResearchArea;
   owl:minCardinality 1
  ];
- rdfs:label "todo translate"@ru;
+ rdfs:label "область исследований"@ru;
  rdfs:label "research area"@en.
  
 :locatedIn a rdf:Property;
@@ -89,7 +89,7 @@
  rdfs:label "located in"@en;
  rdfs:domain :Laboratory;
  rdfs:range lgdo:Country;
- rdfs:label "todo translate"@ru;
+ rdfs:label "располагается в"@ru;
  rdfs:label "located in"@en.
   
 # maybe it should be called different, as people are not really students as they already have a phd 
@@ -114,7 +114,7 @@
  rdfs:label "доктор наук"@ru.
 
 :aspiresDegree a rdf:Property;
- rdfs:label "aspires degree"@en;
+ rdfs:label "aspires degree@en;
  rdfs:domain foaf:Person;
  rdfs:range foaf:AcademicDegree.
 
@@ -132,25 +132,25 @@
   rdfs:domain foaf:Person;
   rdfs:range vivo:Qualification;
   rdfs:label "academic qualification"@en;
-  rdfs:label "todo ivan: translate academic degree"@ru.
+  rdfs:label "академическое звание"@ru.
 
 :academicDegree a rdf:Property;
   rdfs:domain :AcademicQualification;
   rdfs:range vivo:AcademicDegree;
   rdfs:label "academic degree"@en;
-  rdfs:label "todo ivan: translate academic degree"@ru.
+  rdfs:label "академическая степень"@ru.
 
 # academic subject (e.g. computer science, mathematics) is expected to be more broad than research area. todo: investigate this, maybe it can be put together. 
 :academicSubject a rdf:Property;
   rdfs:domain :AcademicQualification;
   rdfs:range :AcademicSubject;
   rdfs:label "academic subject"@en;
-  rdfs:label "todo ivan: translate"@ru.
+  rdfs:label "академический предмет"@ru.
 
 :AcademicQualification a owl:Class;
   rdfs:label "academic qualification"@en;
-  rdfs:label "todo ivan: translate academic degree"@ru;
-  rdfs:comment "todo translate"@ru;
+  rdfs:label "академическое звание"@ru;
+  rdfs:comment "Академическое звание с академической степенью в области исследования"@ru;
   rdfs:comment "An academic qualification with an academic degree in field.";
   rdfs:subClassOf
  [
@@ -166,7 +166,7 @@
 
 :AcademicSubject a owl:Class;
   rdfs:label "academic subject"@en;
-  rdfs:label "todo ivan: translate"@ru;
-  rdfs:comment "todo translate"@ru;
+  rdfs:label "академический предмет"@ru;
+  rdfs:comment "академический предмет, например, математика или информатика"@ru;
   rdfs:comment "academic subject, such as Math or Computer Science".
 
