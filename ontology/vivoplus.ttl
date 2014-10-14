@@ -7,6 +7,9 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix lgdo: <http://linkedgeodata.org/ontology/>.
 @prefix gn: <http://www.geonames.org/ontology#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix lgd: <http://linkedgeodata.org/ontology/>.
 
 :SISTI a owl:Class;
  rdfs:seeAlso "http://grnti.ru";
@@ -43,8 +46,8 @@
  rdfs:subClassOf
  [
   a owl:Restriction;
-  owl:onProperty lgd:country.
-  owl:cardinality 0.
+  owl:onProperty lgd:country;
+  owl:cardinality 0
  ];
  rdfs:label "todo translate"@ru;
  rdfs:comment "todo translate"@ru;
@@ -56,8 +59,8 @@
  rdfs:subClassOf
  [
   a owl:Restriction;
-  owl:onProperty lgd:country.
-  owl:minCardinality 1.
+  owl:onProperty lgd:country;
+  owl:minCardinality 1
  ];
  rdfs:label "todo translate"@ru;
  rdfs:comment "todo translate"@ru;
@@ -75,9 +78,9 @@
  rdfs:subClassOf
  [
   a owl:Restriction;
-  owl:onProperty :hasResearchArea.
-  owl:minCardinality 1.
- .];
+  owl:onProperty :hasResearchArea;
+  owl:minCardinality 1
+ ];
  rdfs:label "todo translate"@ru;
  rdfs:label "research area"@en.
  
@@ -89,7 +92,7 @@
  rdfs:label "todo translate"@ru;
  rdfs:label "located in"@en.
   
-# maybe it should be callled different, as people are not really students as they already have a phd 
+# maybe it should be called different, as people are not really students as they already have a phd 
 :CandidateOfSciencesStudent rdfs:subClassOf vivo:Student, vivo:GraduateStudent;
  rdfs:label "Candidate of Science student"@en;
  rdfs:label "кандидат наук студент"@ru;
@@ -97,7 +100,7 @@
  
 :DoctorOfSciencesStudent rdfs:subClassOf vivo:Student, vivo:GraduateStudent;
  rdfs:label "Doctor of Science student"@en;
- rdfs:label "доктор наук студент"@ru.
+ rdfs:label "доктор наук студент"@ru;
  rdfs:seeAlso :DoctorOfSciencesDegree.
  
 :CandidateOfSciences a vivo:AcademicDegree, vivo:ThesisDegree;
@@ -123,10 +126,47 @@
 # todo: clarify what that means exactly 
 :ScientificSupervisor a owl:Class;
  rdfs:subClassOf foaf:Person;
- rdfsl:abel "Научный руководитель"@ru.
+ rdfs:label "Научный руководитель"@ru.
  
- :academicDegree a rdf:Property;
+:academicQualification a rdf:Property;
   rdfs:domain foaf:Person;
+  rdfs:range vivo:Qualification;
+  rdfs:label "academic qualification"@en;
+  rdfs:label "todo ivan: translate academic degree"@ru.
+
+:academicDegree a rdf:Property;
+  rdfs:domain :AcademicQualification;
   rdfs:range vivo:AcademicDegree;
   rdfs:label "academic degree"@en;
   rdfs:label "todo ivan: translate academic degree"@ru.
+
+# academic subject (e.g. computer science, mathematics) is expected to be more broad than research area. todo: investigate this, maybe it can be put together. 
+:academicSubject a rdf:Property;
+  rdfs:domain :AcademicQualification;
+  rdfs:range :AcademicSubject;
+  rdfs:label "academic subject"@en;
+  rdfs:label "todo ivan: translate"@ru.
+
+:AcademicQualification a owl:Class;
+  rdfs:label "academic qualification"@en;
+  rdfs:label "todo ivan: translate academic degree"@ru;
+  rdfs:comment "todo translate"@ru;
+  rdfs:comment "An academic qualification with an academic degree in field.";
+  rdfs:subClassOf
+ [
+  a owl:Restriction;
+  owl:onProperty :academicDegree;
+  owl:cardinality 1
+ ],
+ [
+  a owl:Restriction;
+  owl:onProperty :academicSubject;
+  owl:cardinality 1
+ ].
+
+:AcademicSubject a owl:Class;
+  rdfs:label "academic subject"@en;
+  rdfs:label "todo ivan: translate"@ru;
+  rdfs:comment "todo translate"@ru;
+  rdfs:comment "academic subject, such as Math or Computer Science".
+
