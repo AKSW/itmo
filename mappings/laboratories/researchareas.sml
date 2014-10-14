@@ -9,7 +9,7 @@ CREATE VIEW LaboratoryResearchFields AS CONSTRUCT {
                 rdfs:label ?label.
 }
 WITH
-  ?researchArea = uri(concat("http://lod.ifmo.ru/ResearchArea/", ?RES_DIR_ID))
+  ?researchArea = uri(concat("http://lod.ifmo.ru/ResearchArea", ?RES_DIR_ID))
   ?label = plainLiteral(?RES_DIR, 'ru')
 FROM
   [[ SELECT
