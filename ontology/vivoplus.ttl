@@ -19,17 +19,37 @@
  rdfs:domain :SISTI;
  rdfs:range xsd:String;
  rdfs:label "SISTI ID"@en;
+ rdfs:label "todo translate"@ru;
+ rdfs:comment "todo translate"@ru;
  rdfs:comment "SISTI identifier (nn.nn.nn)"@en.
 
 :sisti a rdf:Property;
  rdfs:label "SISTI"@en;
  rdfs:comment "SISTI category"@en;
+ rdfs:label "todo translate"@ru;
+ rdfs:comment "todo translate"@ru;
  rdfs:domain :Laboratory;
  rdfs:range :SISTI.
 
 :Laboratory a owl:Class;
  rdfs:subClassOf vivo:Laboratory;
- rdfs:comment "".
+ rdfs:label "todo translate"@ru;
+ rdfs:comment "todo translate"@ru;
+ rdfs:label "laboratory"@en;
+ rdfs:comment ""@en.
+
+:VirtualLaboratory a owl:Class;
+ rdfs:subClassOf :Laboratory;
+ rdfs:subClassOf
+ [
+  a owl:Restriction;
+  owl:onProperty lgd:country.
+  owl:cardinality 0.
+ ];
+ rdfs:label "todo translate"@ru;
+ rdfs:comment "todo translate"@ru;
+ rdfs:label "virtual laboratory";
+ rdfs:comment "A virtual laboratory without definite representative office".
 
 :RealLaboratory a owl:Class;
  rdfs:subClassOf :Laboratory;
@@ -39,12 +59,17 @@
   owl:onProperty lgd:country.
   owl:minCardinality 1.
  ];
- rdfs:comment "As virtual laboratories without definite representative office(-s) can exist, we define a class for real laboratories with a restriction, that it has representative office in at least one country".
+ rdfs:label "todo translate"@ru;
+ rdfs:comment "todo translate"@ru;
+ rdfs:label "real laboratory";
+ rdfs:comment "A real laboratories with an representative office in at least one country".
 
-:hasResearchArea a rdf:Property;
+:researchArea a rdf:Property;
  rdfs:subPropertyOf vivo:hasResearchArea;
  rdfs:domain :Laboratory;
  rdfs:range xsd:String;
+ rdfs:label "todo translate"@ru;
+ rdfs:label "research area"@en.
 
 :ResearchArea a owl:Class;
  rdfs:subClassOf
@@ -52,20 +77,27 @@
   a owl:Restriction;
   owl:onProperty :hasResearchArea.
   owl:minCardinality 1.
- .].
+ .];
+ rdfs:label "todo translate"@ru;
+ rdfs:label "research area"@en.
  
 :locatedIn a rdf:Property;
  rdfs:subPropertyOf gn:locatedIn;
  rdfs:label "located in"@en;
  rdfs:domain :Laboratory;
- rdfs:range lgdo:Country.
+ rdfs:range lgdo:Country;
+ rdfs:label "todo translate"@ru;
+ rdfs:label "located in"@en.
   
+# maybe it should be callled different, as people are not really students as they already have a phd 
 :CandidateOfSciencesStudent rdfs:subClassOf vivo:Student, vivo:GraduateStudent;
  rdfs:label "Candidate of Science student"@en;
+ rdfs:label "кандидат наук студент"@ru;
  rdfs:seeAlso :CandidateOfSciencesDegree.
  
 :DoctorOfSciencesStudent rdfs:subClassOf vivo:Student, vivo:GraduateStudent;
  rdfs:label "Doctor of Science student"@en;
+ rdfs:label "доктор наук студент"@ru.
  rdfs:seeAlso :DoctorOfSciencesDegree.
  
 :CandidateOfSciences a vivo:AcademicDegree, vivo:ThesisDegree;
@@ -92,3 +124,9 @@
 :ScientificSupervisor a owl:Class;
  rdfs:subClassOf foaf:Person;
  rdfsl:abel "Научный руководитель"@ru.
+ 
+ :academicDegree a rdf:Property;
+  rdfs:domain foaf:Person;
+  rdfs:range vivo:AcademicDegree;
+  rdfs:label "academic degree"@en;
+  rdfs:label "todo ivan: translate academic degree"@ru.
