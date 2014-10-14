@@ -69,7 +69,7 @@
  rdfs:seeAlso :DoctorOfSciencesDegree.
  
 :CandidateOfSciences a vivo:AcademicDegree, vivo:ThesisDegree;
- rdfs:comment "The Candidate of Sciences (Kandidat Nauk) is the lower of Russias' two doctoral degrees. It normally requires at least three years of study beyond graduation from a university level higher education institution and the award of the Specialist or the Magistr diploma."@en;
+ rdfs:comment "Equivalent to PhD. The Candidate of Sciences (Kandidat Nauk) is the lower of Russias' two doctoral degrees. It normally requires at least three years of study beyond graduation from a university level higher education institution and the award of the Specialist or the Magistr diploma."@en;
  rdfs:label "Candidate of Sciences"@en;
  rdfs:label "кандидат наук"@ru.
 
