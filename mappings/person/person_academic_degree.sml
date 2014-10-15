@@ -8,9 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 CREATE VIEW AcademicDegree AS CONSTRUCT {
    ?person a foaf:Person ;
                vivoplus:pcardId ?pcardId;
-               vivoplus:academicQualification ?qualification;
-               vivoplus:degreeLevel ?level; // align to existing vocabulary
-               vivoplus:degreeSubject ?subject. // align
+               vivoplus:academicQualification ?qualification.
 
    ?qualification a vivoplus:AcademicQualification;
 	rdfs:label ?qualificationLabel;
@@ -67,7 +65,7 @@ SUBJECT_TRANS,
 regexp_replace(initcap(regexp_replace(
 trans_eng(trim(replace(REGEXP_SUBSTR(ACADEMIC_DEGREE,'\w*[
 ,]*(.*)',1,1,NULL,1),'-',' '))),
- '[[:digit:]]', ' ')), '([[:punct:] | [:blank:]])', '')
- SUBJECT_CAMEL
+'[0-9]', ' ')), '([\s.,-])', '')
+SUBJECT_CAMEL
 
 from sem_person_academic_degree where ACADEMIC_DEGREE is not null]]
