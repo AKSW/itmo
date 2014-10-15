@@ -1,0 +1,456 @@
+# load to graph http://linkedgeodata.org in order to enable laboratory heat map visualization
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lgd:	<http://linkedgeodata.org/triplify/> .
+@prefix lgdo:	<http://linkedgeodata.org/ontology/> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+
+lgd:node1038445031	rdf:type	lgdo:Country .
+lgd:node1038445031	rdfs:label	"Cura\u00E7ao"@en .
+lgd:node1356260631	rdf:type	lgdo:Country ;
+	rdfs:label	"South Sudan"@en .
+lgd:node1363947712	rdf:type	lgdo:Country ;
+	rdfs:label	"France"@en .
+lgd:node1367931778	rdf:type	lgdo:Country ;
+	rdfs:label	"New Caledonia"@en .
+lgd:node1388794217	rdf:type	lgdo:Country ;
+	rdfs:label	"Pitcairn"@en .
+lgd:node1420871007	rdf:type	lgdo:Country ;
+	rdfs:label	"Ireland"@en .
+lgd:node148332300	rdf:type	lgdo:Country ;
+	rdfs:label	"Spain"@en .
+lgd:node148874198	rdf:type	lgdo:Country ;
+	rdfs:label	"Andorra"@en .
+lgd:node1504546320	rdf:type	lgdo:Country ;
+	rdfs:label	"Switzerland"@en .
+lgd:node1511934680	rdf:type	lgdo:Country ;
+	rdfs:label	"Palau"@en .
+lgd:node1529444079	rdf:type	lgdo:Country ;
+	rdfs:label	"Samoa"@en .
+lgd:node1602889766	rdf:type	lgdo:Country ;
+	rdfs:label	"Isle of Man"@en .
+lgd:node1640880787	rdf:type	lgdo:Country ;
+	rdfs:label	"Zimbabwe"@en .
+lgd:node1644732479	rdf:type	lgdo:Country ;
+	rdfs:label	"Guatemala"@en .
+lgd:node1644764586	rdf:type	lgdo:Country ;
+	rdfs:label	"Paraguay"@en .
+lgd:node1648342273	rdf:type	lgdo:Country ;
+	rdfs:label	"Ukraine"@en .
+lgd:node1683325355	rdf:type	lgdo:Country ;
+	rdfs:label	"Germany"@en .
+lgd:node1684793666	rdf:type	lgdo:Country ;
+	rdfs:label	"Belgium"@en .
+lgd:node1694010854	rdf:type	lgdo:Country ;
+	rdfs:label	"Brunei"@en .
+lgd:node1696850886	rdf:type	lgdo:Country ;
+	rdfs:label	"South Ossetia"@en .
+lgd:node1696853468	rdf:type	lgdo:Country ;
+	rdfs:label	"Nagorno-Karabakh Republic"@en .
+lgd:node1696874354	rdf:type	lgdo:Country ;
+	rdfs:label	"Northern Cyprus"@en .
+lgd:node1700777271	rdf:type	lgdo:Country ;
+	rdfs:label	"Kyrgyzstan"@en .
+lgd:node1708980402	rdf:type	lgdo:Country ;
+	rdfs:label	"Mauritius"@en .
+lgd:node1770467684	rdf:type	lgdo:Country ;
+	rdfs:label	"Aruba"@en .
+lgd:node1790048269	rdf:type	lgdo:Country ;
+	rdfs:label	"Monaco"@en .
+lgd:node1983711862	rdf:type	lgdo:Country ;
+	rdfs:label	"Bosnia and Herzegovina"@en .
+lgd:node2000314677	rdf:type	lgdo:Country ;
+	rdfs:label	"Western Sahara"@en .
+lgd:node2000380837	rdf:type	lgdo:Country ;
+	rdfs:label	"Republic of Kosovo"@en .
+lgd:node2043451343	rdf:type	lgdo:Country ;
+	rdfs:label	"Transnistria"@en .
+lgd:node208592566	rdf:type	lgdo:Country ;
+	rdfs:label	"Slovenia"@en .
+lgd:node2110225115	rdf:type	lgdo:Country ;
+	rdfs:label	"Palestine"@en .
+lgd:node2134362766	rdf:type	lgdo:Country ;
+	rdfs:label	"Malaysia"@en .
+lgd:node2163914205	rdf:type	lgdo:Country ;
+	rdfs:label	"Ethiopia"@en .
+lgd:node2218147140	rdf:type	lgdo:Country ;
+	rdfs:label	"South Africa"@en .
+lgd:node246422158	rdf:type	lgdo:Country ;
+	rdfs:label	"Dominican Republic"@en .
+lgd:node248120384	rdf:type	lgdo:Country ;
+	rdfs:label	"New Zealand"@en .
+lgd:node249399277	rdf:type	lgdo:Country ;
+	rdfs:label	"Armenia"@en .
+lgd:node249399280	rdf:type	lgdo:Country ;
+	rdfs:label	"Argentina"@en .
+lgd:node249399285	rdf:type	lgdo:Country ;
+	rdfs:label	"Barbados"@en .
+lgd:node249399288	rdf:type	lgdo:Country ;
+	rdfs:label	"Burkina Faso"@en .
+lgd:node249399296	rdf:type	lgdo:Country ;
+	rdfs:label	"Bahamas"@en .
+lgd:node249399300	rdf:type	lgdo:Country ;
+	rdfs:label	"Belarus"@en .
+lgd:node249399308	rdf:type	lgdo:Country ;
+	rdfs:label	"Cook Islands"@en .
+lgd:node249399313	rdf:type	lgdo:Country ;
+	rdfs:label	"Cuba"@en .
+lgd:node249399339	rdf:type	lgdo:Country ;
+	rdfs:label	"South Georgia and South Sandwich Islands"@en .
+lgd:node249399347	rdf:type	lgdo:Country ;
+	rdfs:label	"Hungary"@en .
+lgd:node249399360	rdf:type	lgdo:Country ;
+	rdfs:label	"Comoros"@en .
+lgd:node249399361	rdf:type	lgdo:Country ;
+	rdfs:label	"North Korea"@en .
+lgd:node249399362	rdf:type	lgdo:Country ;
+	rdfs:label	"South Korea"@en .
+lgd:node249399364	rdf:type	lgdo:Country ;
+	rdfs:label	"Cayman Islands"@en .
+lgd:node249399394	rdf:type	lgdo:Country ;
+	rdfs:label	"Malaysia"@en .
+lgd:node249399402	rdf:type	lgdo:Country ;
+	rdfs:label	"Nepal"@en .
+lgd:node249399406	rdf:type	lgdo:Country ;
+	rdfs:label	"Peru"@en .
+lgd:node249399410	rdf:type	lgdo:Country ;
+	rdfs:label	"Saint Pierre and Miquelon"@en .
+lgd:node249399419	rdf:type	lgdo:Country ;
+	rdfs:label	"Saudi Arabia"@en .
+lgd:node249399429	rdf:type	lgdo:Country ;
+	rdfs:label	"S\u00E3o Tom\u00E9 and Pr\u00EDncipe"@en .
+lgd:node249399440	rdf:type	lgdo:Country ;
+	rdfs:label	"Turkmenistan"@en .
+lgd:node249399444	rdf:type	lgdo:Country ;
+	rdfs:label	"Trinidad and Tobago"@en .
+lgd:node249399459	rdf:type	lgdo:Country ;
+	rdfs:label	"Yemen"@en .
+lgd:node26347360	rdf:type	lgdo:Country ;
+	rdfs:label	"Italy"@en .
+lgd:node26847706	rdf:type	lgdo:Country ;
+	rdfs:label	"Afghanistan"@en .
+lgd:node26847709	rdf:type	lgdo:Country ;
+	rdfs:label	"Austria"@en .
+lgd:node269195852	rdf:type	lgdo:Country ;
+	rdfs:label	"Svalbard"@en .
+lgd:node332779764	rdf:type	lgdo:Country ;
+	rdfs:label	"Belize"@en .
+lgd:node369137525	rdf:type	lgdo:Country ;
+	rdfs:label	"Serbia"@en .
+lgd:node424297198	rdf:type	lgdo:Country ;
+	rdfs:label	"Norway"@en .
+lgd:node424297207	rdf:type	lgdo:Country ;
+	rdfs:label	"Bahrain"@en .
+lgd:node424297217	rdf:type	lgdo:Country ;
+	rdfs:label	"The Netherlands"@en .
+lgd:node424297384	rdf:type	lgdo:Country ;
+	rdfs:label	"Benin"@en .
+lgd:node424297465	rdf:type	lgdo:Country ;
+	rdfs:label	"Costa Rica"@en .
+lgd:node424297496	rdf:type	lgdo:Country ;
+	rdfs:label	"Dominica"@en .
+lgd:node424297579	rdf:type	lgdo:Country ;
+	rdfs:label	"Gambia"@en .
+lgd:node424297586	rdf:type	lgdo:Country ;
+	rdfs:label	"Guinea"@en .
+lgd:node424297609	rdf:type	lgdo:Country ;
+	rdfs:label	"Guinea-Bissau"@en .
+lgd:node424297629	rdf:type	lgdo:Country ;
+	rdfs:label	"Honduras"@en .
+lgd:node424297647	rdf:type	lgdo:Country ;
+	rdfs:label	"Israel"@en .
+lgd:node424297742	rdf:type	lgdo:Country ;
+	rdfs:label	"Republic of Lebanon"@en .
+lgd:node424297773	rdf:type	lgdo:Country ;
+	rdfs:label	"Lithuania"@en .
+lgd:node424297810	rdf:type	lgdo:Country ;
+	rdfs:label	"Macedonia"@en .
+lgd:node424297816	rdf:type	lgdo:Country ;
+	rdfs:label	"Mali"@en .
+lgd:node424297917	rdf:type	lgdo:Country ;
+	rdfs:label	"Nauru"@en .
+lgd:node424297931	rdf:type	lgdo:Country ;
+	rdfs:label	"Papua New Guinea"@en .
+lgd:node424297973	rdf:type	lgdo:Country ;
+	rdfs:label	"Sudan"@en .
+lgd:node424298019	rdf:type	lgdo:Country ;
+	rdfs:label	"Luxembourg"@en .
+lgd:node424298076	rdf:type	lgdo:Country ;
+	rdfs:label	"Chad"@en .
+lgd:node424298150	rdf:type	lgdo:Country ;
+	rdfs:label	"Vietnam"@en .
+lgd:node424298167	rdf:type	lgdo:Country ;
+	rdfs:label	"South Africa"@en .
+lgd:node424298227	rdf:type	lgdo:Country ;
+	rdfs:label	"Ecuador"@en .
+lgd:node424298277	rdf:type	lgdo:Country ;
+	rdfs:label	"Seychelles"@en .
+lgd:node424298311	rdf:type	lgdo:Country ;
+	rdfs:label	"Iran"@en .
+lgd:node424298326	rdf:type	lgdo:Country ;
+	rdfs:label	"Turkey"@en .
+lgd:node424310601	rdf:type	lgdo:Country ;
+	rdfs:label	"Albania"@en .
+lgd:node424310703	rdf:type	lgdo:Country ;
+	rdfs:label	"United Arab Emirates"@en .
+lgd:node424310875	rdf:type	lgdo:Country ;
+	rdfs:label	"Angola"@en .
+lgd:node424310982	rdf:type	lgdo:Country ;
+	rdfs:label	"Burundi"@en .
+lgd:node424311028	rdf:type	lgdo:Country ;
+	rdfs:label	"Bhutan"@en .
+lgd:node424311104	rdf:type	lgdo:Country ;
+	rdfs:label	"Chile"@en .
+lgd:node424311151	rdf:type	lgdo:Country ;
+	rdfs:label	"Cape Verde"@en .
+lgd:node424311237	rdf:type	lgdo:Country ;
+	rdfs:label	"Falkland Islands"@en .
+lgd:node424311244	rdf:type	lgdo:Country ;
+	rdfs:label	"Federated States of Micronesia"@en .
+lgd:node424311252	rdf:type	lgdo:Country ;
+	rdfs:label	"Gabon"@en .
+lgd:node424311328	rdf:type	lgdo:Country ;
+	rdfs:label	"Guyana"@en .
+lgd:node424311353	rdf:type	lgdo:Country ;
+	rdfs:label	"Croatia"@en .
+lgd:node424311521	rdf:type	lgdo:Country ;
+	rdfs:label	"Kazakhstan"@en .
+lgd:node424311565	rdf:type	lgdo:Country ;
+	rdfs:label	"Sri Lanka"@en .
+lgd:node424311573	rdf:type	lgdo:Country ;
+	rdfs:label	"Liberia"@en .
+lgd:node424311641	rdf:type	lgdo:Country ;
+	rdfs:label	"Maldives"@en .
+lgd:node424311645	rdf:type	lgdo:Country ;
+	rdfs:label	"Malawi"@en .
+lgd:node424311658	rdf:type	lgdo:Country ;
+	rdfs:label	"Mozambique"@en .
+lgd:node424311662	rdf:type	lgdo:Country ;
+	rdfs:label	"Namibia"@en .
+lgd:node424311675	rdf:type	lgdo:Country ;
+	rdfs:label	"Niger"@en .
+lgd:node424311679	rdf:type	lgdo:Country ;
+	rdfs:label	"Norfolk Island"@en .
+lgd:node424311738	rdf:type	lgdo:Country ;
+	rdfs:label	"Rwanda"@en .
+lgd:node424311802	rdf:type	lgdo:Country ;
+	rdfs:label	"El Salvador"@en .
+lgd:node424311806	rdf:type	lgdo:Country ;
+	rdfs:label	"Syria"@en .
+lgd:node424311814	rdf:type	lgdo:Country ;
+	rdfs:label	"Turks and Caicos Islands"@en .
+lgd:node424311827	rdf:type	lgdo:Country ;
+	rdfs:label	"Togo"@en .
+lgd:node424311848	rdf:type	lgdo:Country ;
+	rdfs:label	"Tonga"@en .
+lgd:node424311883	rdf:type	lgdo:Country ;
+	rdfs:label	"Vatican City"@en .
+lgd:node424311890	rdf:type	lgdo:Country ;
+	rdfs:label	"Venezuela"@en .
+lgd:node424311891	rdf:type	lgdo:Country ;
+	rdfs:label	"British Virgin Islands"@en .
+lgd:node424311942	rdf:type	lgdo:Country ;
+	rdfs:label	"Indonesia"@en .
+lgd:node424311955	rdf:type	lgdo:Country ;
+	rdfs:label	"Marshall Islands"@en .
+lgd:node424312026	rdf:type	lgdo:Country ;
+	rdfs:label	"Greenland"@en .
+lgd:node424312044	rdf:type	lgdo:Country ;
+	rdfs:label	"Faroe Islands"@en .
+lgd:node424313277	rdf:type	lgdo:Country ;
+	rdfs:label	"Sweden"@en .
+lgd:node424313406	rdf:type	lgdo:Country ;
+	rdfs:label	"Cyprus"@en .
+lgd:node424313428	rdf:type	lgdo:Country ;
+	rdfs:label	"Singapore"@en .
+lgd:node424313451	rdf:type	lgdo:Country ;
+	rdfs:label	"Japan"@en .
+lgd:node424313582	rdf:type	lgdo:Country ;
+	rdfs:label	"People's Republic of China"@en .
+lgd:node424313675	rdf:type	lgdo:Country ;
+	rdfs:label	"Azerbaijan"@en .
+lgd:node424313730	rdf:type	lgdo:Country ;
+	rdfs:label	"Bolivia"@en .
+lgd:node424313734	rdf:type	lgdo:Country ;
+	rdfs:label	"Brazil"@en .
+lgd:node424313751	rdf:type	lgdo:Country ;
+	rdfs:label	"Botswana"@en .
+lgd:node424313760	rdf:type	lgdo:Country ;
+	rdfs:label	"Canada"@en .
+lgd:node424313764	rdf:type	lgdo:Country ;
+	rdfs:label	"Cocos (Keeling) Islands"@en .
+lgd:node424313803	rdf:type	lgdo:Country ;
+	rdfs:label	"Czech Republic"@en .
+lgd:node424313823	rdf:type	lgdo:Country ;
+	rdfs:label	"Fiji"@en .
+lgd:node424313832	rdf:type	lgdo:Country ;
+	rdfs:label	"Estonia"@en .
+lgd:node424313836	rdf:type	lgdo:Country ;
+	rdfs:label	"Ghana"@en .
+lgd:node424313853	rdf:type	lgdo:Country ;
+	rdfs:label	"Equatorial Guinea"@en .
+lgd:node424313891	rdf:type	lgdo:Country ;
+	rdfs:label	"British Indian Ocean Territory"@en .
+lgd:node424313903	rdf:type	lgdo:Country ;
+	rdfs:label	"Kenya"@en .
+lgd:node424313936	rdf:type	lgdo:Country ;
+	rdfs:label	"Kuwait"@en .
+lgd:node424314005	rdf:type	lgdo:Country ;
+	rdfs:label	"Montserrat"@en .
+lgd:node424314088	rdf:type	lgdo:Country ;
+	rdfs:label	"Pakistan"@en .
+lgd:node424314123	rdf:type	lgdo:Country ;
+	rdfs:label	"Sierra Leone"@en .
+lgd:node424314145	rdf:type	lgdo:Country ;
+	rdfs:label	"India"@en .
+lgd:node424314276	rdf:type	lgdo:Country ;
+	rdfs:label	"Tajikistan"@en .
+lgd:node424314335	rdf:type	lgdo:Country ;
+	rdfs:label	"Tanzania"@en .
+lgd:node424314631	rdf:type	lgdo:Country ;
+	rdfs:label	"Colombia"@en .
+lgd:node424314691	rdf:type	lgdo:Country ;
+	rdfs:label	"C\u00F4te d'Ivoire"@en .
+lgd:node424314784	rdf:type	lgdo:Country ;
+	rdfs:label	"Iceland"@en .
+lgd:node424314830	rdf:type	lgdo:Country ;
+	rdfs:label	"Russia"@en .
+lgd:node424315291	rdf:type	lgdo:Country ;
+	rdfs:label	"Oman"@en .
+lgd:node424315405	rdf:type	lgdo:Country ;
+	rdfs:label	"Gibraltar"@en .
+lgd:node424315584	rdf:type	lgdo:Country ;
+	rdfs:label	"Australia"@en .
+lgd:node424315709	rdf:type	lgdo:Country ;
+	rdfs:label	"Bulgaria"@en .
+lgd:node424315932	rdf:type	lgdo:Country ;
+	rdfs:label	"Cameroon"@en .
+lgd:node424316018	rdf:type	lgdo:Country ;
+	rdfs:label	"Egypt"@en .
+lgd:node424316022	rdf:type	lgdo:Country ;
+	rdfs:label	"Eritrea"@en .
+lgd:node424316074	rdf:type	lgdo:Country ;
+	rdfs:label	"Grenada"@en .
+lgd:node424316205	rdf:type	lgdo:Country ;
+	rdfs:label	"Iraq"@en .
+lgd:node424316216	rdf:type	lgdo:Country ;
+	rdfs:label	"Jordan"@en .
+lgd:node424316307	rdf:type	lgdo:Country ;
+	rdfs:label	"Laos"@en .
+lgd:node424316319	rdf:type	lgdo:Country ;
+	rdfs:label	"Saint Lucia"@en .
+lgd:node424316417	rdf:type	lgdo:Country ;
+	rdfs:label	"Moldova"@en .
+lgd:node424316478	rdf:type	lgdo:Country ;
+	rdfs:label	"Myanmar"@en .
+lgd:node424316493	rdf:type	lgdo:Country ;
+	rdfs:label	"Mauritania"@en .
+lgd:node424316663	rdf:type	lgdo:Country ;
+	rdfs:label	"Nigeria"@en .
+lgd:node424316671	rdf:type	lgdo:Country ;
+	rdfs:label	"Nicaragua"@en .
+lgd:node424316758	rdf:type	lgdo:Country ;
+	rdfs:label	"Panama"@en .
+lgd:node424317025	rdf:type	lgdo:Country ;
+	rdfs:label	"San Marino"@en .
+lgd:node424317039	rdf:type	lgdo:Country ;
+	rdfs:label	"Somalia"@en .
+lgd:node424317315	rdf:type	lgdo:Country ;
+	rdfs:label	"Tunisia"@en .
+lgd:node424317372	rdf:type	lgdo:Country ;
+	rdfs:label	"Tuvalu"@en .
+lgd:node424317406	rdf:type	lgdo:Country ;
+	rdfs:label	"Uganda"@en .
+lgd:node424317428	rdf:type	lgdo:Country ;
+	rdfs:label	"Uzbekistan"@en .
+lgd:node424317744	rdf:type	lgdo:Country ;
+	rdfs:label	"Martinique"@en .
+lgd:node424317935	rdf:type	lgdo:Country ;
+	rdfs:label	"United States of America"@en .
+lgd:node432424926	rdf:type	lgdo:Country ;
+	rdfs:label	"Algeria"@en .
+lgd:node432424929	rdf:type	lgdo:Country ;
+	rdfs:label	"Antigua and Barbuda"@en .
+lgd:node432424937	rdf:type	lgdo:Country ;
+	rdfs:label	"Bangladesh"@en .
+lgd:node432424952	rdf:type	lgdo:Country ;
+	rdfs:label	"Cambodia"@en .
+lgd:node432424956	rdf:type	lgdo:Country ;
+	rdfs:label	"Central African Republic"@en .
+lgd:node432424968	rdf:type	lgdo:Country ;
+	rdfs:label	"Denmark"@en .
+lgd:node432424972	rdf:type	lgdo:Country ;
+	rdfs:label	"East Timor"@en .
+lgd:node432424981	rdf:type	lgdo:Country ;
+	rdfs:label	"Finland"@en .
+lgd:node432424985	rdf:type	lgdo:Country ;
+	rdfs:label	"Georgia"@en .
+lgd:node432424989	rdf:type	lgdo:Country ;
+	rdfs:label	"Greece"@en .
+lgd:node432425015	rdf:type	lgdo:Country ;
+	rdfs:label	"Kiribati"@en .
+lgd:node432425019	rdf:type	lgdo:Country ;
+	rdfs:label	"Latvia"@en .
+lgd:node432425023	rdf:type	lgdo:Country ;
+	rdfs:label	"Libya"@en .
+lgd:node432425028	rdf:type	lgdo:Country ;
+	rdfs:label	"Madagascar"@en .
+lgd:node432425032	rdf:type	lgdo:Country ;
+	rdfs:label	"Malta"@en .
+lgd:node432425036	rdf:type	lgdo:Country ;
+	rdfs:label	"Mexico"@en .
+lgd:node432425040	rdf:type	lgdo:Country ;
+	rdfs:label	"Mongolia"@en .
+lgd:node432425041	rdf:type	lgdo:Country ;
+	rdfs:label	"Morocco"@en .
+lgd:node432425060	rdf:type	lgdo:Country ;
+	rdfs:label	"Poland"@en .
+lgd:node432425062	rdf:type	lgdo:Country ;
+	rdfs:label	"Qatar"@en .
+lgd:node432425063	rdf:type	lgdo:Country ;
+	rdfs:label	"Republic of the Congo"@en .
+lgd:node432425064	rdf:type	lgdo:Country ;
+	rdfs:label	"Romania"@en .
+lgd:node432425070	rdf:type	lgdo:Country ;
+	rdfs:label	"Saint Vincent and the Grenadines"@en .
+lgd:node432425075	rdf:type	lgdo:Country ;
+	rdfs:label	"Senegal"@en .
+lgd:node432425079	rdf:type	lgdo:Country ;
+	rdfs:label	"Slovakia"@en .
+lgd:node432425087	rdf:type	lgdo:Country ;
+	rdfs:label	"Suriname"@en .
+lgd:node432425099	rdf:type	lgdo:Country ;
+	rdfs:label	"Taiwan"@en .
+lgd:node432425116	rdf:type	lgdo:Country ;
+	rdfs:label	"Uruguay"@en .
+lgd:node432425123	rdf:type	lgdo:Country ;
+	rdfs:label	"Zambia"@en .
+lgd:node433483517	rdf:type	lgdo:Country ;
+	rdfs:label	"Anguilla"@en .
+lgd:node433483519	rdf:type	lgdo:Country ;
+	rdfs:label	"Bermuda"@en .
+lgd:node433483527	rdf:type	lgdo:Country ;
+	rdfs:label	"Coral Sea Islands"@en .
+lgd:node433483540	rdf:type	lgdo:Country ;
+	rdfs:label	"Jersey"@en .
+lgd:node433483552	rdf:type	lgdo:Country ;
+	rdfs:label	"Niue"@en .
+lgd:node433483572	rdf:type	lgdo:Country ;
+	rdfs:label	"Tokelau"@en .
+lgd:node435981993	rdf:type	lgdo:Country ;
+	rdfs:label	"Democratic Republic of the Congo"@en .
+lgd:node437146363	rdf:type	lgdo:Country ;
+	rdfs:label	"Thailand"@en .
+lgd:node445970763	rdf:type	lgdo:Country ;
+	rdfs:label	"Montenegro"@en .
+lgd:node462226505	rdf:type	lgdo:Country ;
+	rdfs:label	"French Polynesia"@en .
+lgd:node466507355	rdf:type	lgdo:Country ;
+	rdfs:label	"Abkhazia"@en .
+lgd:node506532878	rdf:type	lgdo:Country ;
+	rdfs:label	"Antarctica"@en .
+lgd:node506562044	rdf:type	lgdo:Country ;
+	rdfs:label	"Saint Barth\u00E9lemy"@en .
+lgd:node823750101	rdf:type	lgdo:Country ;
+	rdfs:label	"Solomon Islands"@en .
+lgd:node838090640	rdf:type	lgdo:Country ;
+	rdfs:label	"United Kingdom"@en .
