@@ -3,6 +3,7 @@
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ROOT_DIR=$(dirname $CURRENT_DIR)
 rm $ROOT_DIR/mappings/all.sml
+mkdir $ROOT_DIR/data
 for D in `find $ROOT_DIR/mappings -type d`
 do
   for file in $D/*.sml; 
