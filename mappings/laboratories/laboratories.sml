@@ -7,10 +7,12 @@ PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
 CREATE VIEW Laboratories AS CONSTRUCT {
    ?laboratory a vivoplus:Laboratory ;
                a vivo:Laboratory;
-               rdfs:label ?name.
+               rdfs:label ?name;
+               rdfs:seeAlso ?webPage.
 }
 WITH
-  ?laboratory = uri(concat("http://lod.ifmo.ru/Laboratory", ?NET_DEP_ID))
+  ?laboratory = uri(ifmolod:,"Laboratory", ?NET_DEP_ID)
   ?name = plainLiteral(?NAME, 'ru')
+  ?webPage = uri("http://irc.ifmo.ru/",?NET_DEP_ID)
 FROM
   [[SELECT NET_DEP_ID, NAME FROM sem_list_info]]
