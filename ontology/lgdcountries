@@ -4,6 +4,9 @@
 @prefix lgdo:	<http://linkedgeodata.org/ontology/> .
 @prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
 
+<http://dbpedia.org/resource/Portugal> rdfs:label "Portugal"@en;
+<http://linkedgeodata.org/ontology/country_code_iso3166> "PT".
+
 lgd:node1038445031	rdf:type	lgdo:Country .
 lgd:node1038445031	rdfs:label	"Cura\u00E7ao"@en .
 lgd:node1356260631	rdf:type	lgdo:Country ;
