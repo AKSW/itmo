@@ -23,7 +23,7 @@ WITH
   ?middleName = plainLiteral(?PATRONYMIC, 'ru')
   ?lastName = plainLiteral(?LAST_NAME, 'ru')
   ?label = plainLiteral(concat(concat(?FIRST_NAME," "),?LAST_NAME))
-  ?laboratory = uri(vivoplus:,"Laboratory",?NET_DEP_ID)
+  ?laboratory = uri(ifmolod:,"Laboratory",?NET_DEP_ID)
   ?supervisorType = uri(vivoplus:,?SUPERVISOR_TYPE)
 FROM
   [[SELECT NET_DEP_ID, PCARD_ID,FIRST_NAME, PATRONYMIC, LAST_NAME, 
