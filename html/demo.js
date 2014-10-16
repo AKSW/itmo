@@ -10,12 +10,24 @@ $(document).ready(
           divElement += "style='width:99%; height:99%;'>";
           divElement += "</div>";         
           return divElement;
-        };
+        }
         function visualizeDiv(divElement) {
           var vizContainer = document.getElementById('sgvizler-container');//.appendChild(divElement);
           vizContainer.innerHTML = divElement;
           sgvizler.containerDrawAll();    
           $("#sgvizler-container").show();
+        }
+        function showPersons(laboratoryUri) {
+          var sparqlQuery = "select ?person {?person a foaf:Person. ?person vivo:affiliatedOrganization <"+laboratoryUri+">.}";
+          var sparqlEndpoint = "http://lod.ifmo.ru/sparql";
+          var queryUrl = sparqlEndpoint+"?query="+ encodeURIComponent(sparqlQuery) +"&format=json";
+                debugger;
+          $.ajax({
+              dataType: "jsonp",  
+              url: queryUrl,
+              success: function( _data ) { 
+              }
+          });
         }
 
         sgvizler
@@ -62,11 +74,10 @@ $(document).ready(
                       //$("#laboratories-list-container").hide();
                       //var sparqlQuery = this.constructSparqlQuerySgvizler(this.similarResourcesIds, this.mappingName);
                       var sparqlQuery = "select ?country count(1) as ?Laboratories {<"+laboratoryUri+"> a vivo:Laboratory. <"+laboratoryUri+"> vivoplus:locatedIn ?c. ?c rdfs:label ?country}";
-                    
-                      console.log(divElement);        
                       var divElement = generateSgvizler(sparqlQuery);
                       visualizeDiv(divElement);
                       $("#laboratories-show-all").show();
+                      showPersons(laboratoryUri);
                     });
                     $("#laboratories-list-container").show();
                 }
