@@ -1,0 +1,35 @@
+#laboratories-show-all {
+  display: none;
+  text-decoration:none; 
+  border-bottom-style:solid; 
+  border-bottom-width:1px; 
+  border-bottom-color:#CCCCCC; 
+  padding-left:10px; 
+}
+
+#laboratories-list-container { 
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width:600px; 
+  /*font-family:Georgia, Times, serif; */
+  font-size:8px; 
+  z-index: 1000;
+}
+#laboratories-list-container ul { list-style: none; }
+#laboratories-list-container ul li { }
+#laboratories-list-container ul li a { 
+  display:inline; 
+  text-decoration:none; 
+  color:#000000; 
+  background-color:#FFFFFF; 
+  line-height:10px;
+  border-bottom-style:solid; 
+  border-bottom-width:1px; 
+  border-bottom-color:#CCCCCC;
+  padding-left:10px; 
+  cursor:pointer; 
+}
+#laboratories-list-container ul li a:hover { color:#B8B8B6; background-image:url(../images/hover.png); background-repeat:repeat-x; }
+#laboratories-list-container ul li a strong { margin-right:10px; }

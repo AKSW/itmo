@@ -1,49 +1,36 @@
- <meta charset="UTF-8"> 
+<meta charset="UTF-8"> 
 <html>
-<head>
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="http://beta.data2000.no/sgvizler/release/0.6/sgvizler.js"></script>
-<script type="text/javascript" src="http://beta.data2000.no/sgvizler/misc/trac/sgvizler-setup.js"></script>
-<script type="text/javascript">
-/*  Setup of Sgvizler trunk version on Trac 0.11.  */
+  <head>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="sgvizler.js"></script>
+    <script type="text/javascript" src="http://beta.data2000.no/sgvizler/misc/trac/sgvizler-setup.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+  </head>
+  <body>
+  <div id="laboratories-list-container">
+    <h2>Laboratories</h2>
+    <h3 id="laboratories-show-all"><a href="#">Show All</a></h3>
+    <ul id="laboratories-list"></ul>
+  </div>
+  <div id="sgvizler-container">
+    <div id="sgvizler"
+       data-sgvizler-endpoint="http://lod.ifmo.ru/sparql"
+       data-sgvizler-query="select ?country count(?lab) as ?Laboratories {?lab a vivo:Laboratory. ?lab vivoplus:locatedIn ?c. ?c rdfs:label ?country}"
+       data-sgvizler-chart="google.visualization.GeoChart"
+      COMMENTEDOUTdata-sgvizler-chart-options="region=005" 
+       style="width:99%; height:99%; border:1px solid black; display: inline-block;">
+    </div>
+  </div>
+  <!--div id="sgvizler"
+     data-sgvizler-endpoint="http://lod.ifmo.ru/sparql"
+     data-sgvizler-query="
+         select ?country count(?lab) as ?Laboratories {?lab a vivo:Laboratory. ?lab vivoplus:locatedIn ?c. ?c rdfs:label ?country}"
+     data-sgvizler-chart="google.visualization.GeoChart"
+    COMMENTEDOUTdata-sgvizler-chart-options="region=005" 
+     style="width:99%; height:99%; border:1px solid black; display: inline-block;">
+  </div-->
 
-// Wait until page is ready to configure Sgvizler:
-$(document).ready(
-    function (){
-        sgvizler
-            .defaultEndpointOutputFormat('json')
-            // Add prefixes used in examples:
-            //.prefix('w',     "http://sws.ifi.uio.no/ont/world.owl#")
-            // Draw all sgvizler containers on page:
-            .containerDrawAll();
-    }
-);
-
-/* Trac 0.11 uses an old version of jQuery. Sgvizler requires a newer
-   version. We re-introduce some old jQuery functions used by Trac but
-   not in the new version: 
-   - loadStylesheet 
-*/
-jQuery.extend(
-    {
-        loadStyleSheet: function(file, type) {
-            $('<link>').attr('rel', 'stylesheet')
-                .attr('type', type)
-                .attr('href', file)
-                .appendTo('head');
-        }
-    }
-);
-</script>
-</head>
-<body>
-<div id="ex"
-   data-sgvizler-endpoint="http://lod.ifmo.ru/sparql"
-   data-sgvizler-query="
-       select ?country count(?lab) as ?Laboratories {?lab a vivo:Laboratory. ?lab vivoplus:locatedIn ?c. ?c rdfs:label ?country}"
-   data-sgvizler-chart="google.visualization.GeoChart"
-  COMMENTEDOUTdata-sgvizler-chart-options="region=005" 
-   style="width:99%; height:99%; border:1px solid black; display: inline-block;"></div>
-</body>
+  </body>
 </html>
