@@ -114,7 +114,7 @@
  rdfs:label "доктор наук"@ru.
 
 :aspiresDegree a rdf:Property;
- rdfs:label "aspires degree@en;
+ rdfs:label "aspires degree"@en;
  rdfs:domain foaf:Person;
  rdfs:range foaf:AcademicDegree.
 
