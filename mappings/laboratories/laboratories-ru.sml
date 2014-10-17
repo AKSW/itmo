@@ -15,4 +15,4 @@ WITH
   ?name = plainLiteral(?NAME, 'ru')
   ?webPage = uri("http://irc.ifmo.ru/",?NET_DEP_ID)
 FROM
-  [[SELECT NET_DEP_ID, NAME FROM sem_list_info]]
+  [[SELECT NET_DEP_ID, NAME FROM sem_list_info WHERE LANG='Русский']]
