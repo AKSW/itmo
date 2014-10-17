@@ -23,7 +23,7 @@ do
     echo "$file is empty" >>  errors.txt
     $ERROR=1
   else
-    cat $file;
+    grep "^<http" $file;
   fi;
 done 2>/dev/null >> $DATA_DIR/itmo.nt
 #load into virtuoso
