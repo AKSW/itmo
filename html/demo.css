@@ -18,12 +18,12 @@
   z-index: 1000;
 }
 
-#person-list {
+#persons-list-container {
   display: none;
   position: absolute;
   top: 10px;
-  left: 800px;
-  width:200px; 
+  left: 620px;
+  width:500px; 
   /*font-family:Georgia, Times, serif; */
   font-size:15px; 
   z-index: 1000;

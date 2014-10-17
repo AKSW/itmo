@@ -18,14 +18,21 @@ $(document).ready(
           $("#sgvizler-container").show();
         }
         function showPersons(laboratoryUri) {
-          var sparqlQuery = "select ?person {?person a foaf:Person. ?person vivo:affiliatedOrganization <"+laboratoryUri+">.}";
+          var sparqlQuery = "select ?person ?label {?person rdfs:label ?label. ?person a foaf:Person. ?person vivo:affiliatedOrganization <"+laboratoryUri+">.}";
           var sparqlEndpoint = "http://lod.ifmo.ru/sparql";
           var queryUrl = sparqlEndpoint+"?query="+ encodeURIComponent(sparqlQuery) +"&format=json";
-                debugger;
           $.ajax({
               dataType: "jsonp",  
               url: queryUrl,
               success: function( _data ) { 
+                var persons = _data.results.bindings;
+                $("#persons-list").html("");
+                for ( var i in persons ) {
+                    var personUri = persons[i].person.value;
+                    var personLabel = persons[i].label.value;
+                    $("#persons-list").append("<li><a href=\""+personUri+"\">About</a><a href=\"#\" >"+personLabel+"</a></li>");
+                }
+                $("#persons-list-container").show();
               }
           });
         }
@@ -39,6 +46,7 @@ $(document).ready(
             visualizeDiv(generateSgvizler(sparqlQuery));
             $("#laboratories-show-all").hide();
             $("#laboratories-list-container").hide();
+            $("#persons-list-container").hide();
           });
 
           $(document).on("regionClick", function(event, data){
