@@ -1,0 +1,3 @@
+pip install sparqlwrapper
+./lgd-gen.py
+Insert triples from lgdLabels.nt into <http://lod.ifmo.ru> graph (necessary for heatmap to work properly)
