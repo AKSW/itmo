@@ -12,7 +12,7 @@ while true; do
 done
 
 DATA_DIR=$(dirname $(pwd))/data
-DATA_FILE=$DATA_DIR/itmo.nt
+DATA_FILE=$DATA_DIR/itmo_dev.nt
 mv $DATA_FILE $DATA_FILE.old
 ERROR=0
 for file in $DATA_DIR/*.nt;
@@ -25,12 +25,12 @@ do
   else
     grep "^<http" $file;
   fi;
-done 2>/dev/null >> $DATA_DIR/itmo.nt
+done 2>/dev/null >> $DATA_DIR/itmo_dev.nt
 #load into virtuoso
-if [ $ERROR -eq 0 ];
-then
-  echo "No empty files deleted. Loading to the server"
-  virtload $DATA_FILE http://lod.ifmo.ru
-else
-  echo "Some of the files are not converted correctly (contains no data)"
-fi;
+# if [ $ERROR -eq 0 ];
+# then
+#   echo "No empty files deleted. Loading to the server"
+#   virtload $DATA_FILE http//lod.ifmo.ru:9000
+# else
+#   echo "Some of the files are not converted correctly (contains no data)"
+# fi;
